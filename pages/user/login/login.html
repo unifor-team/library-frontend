@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="login.css">
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>Login Form Design | CodeLab</title>
-      <link rel="stylesheet" href="style.css">
+      <title>Login</title>
+      <link rel="stylesheet" href="login.css">
    </head>
    <body>
       <div class="wrapper">
          <div class="title">
-            Login Form
+            Login
          </div>
          <form action="#">
             <div class="field">
-               <input type="text" required>
-               <label>Email Address</label>
+               <input id="email" type="text" required>
+               <label>Email</label>
             </div>
             <div class="field">
-               <input type="password" required>
-               <label>Password</label>
+               <input id="password" type="password" required>
+               <label>Senha</label>
             </div>
             <div class="field">
-               <input type="submit" value="Login">
+               <input type="submit" type="submit" value="Login">
             </div>
             <div class="signup-link">
-               Not a member? <a href="../register/register.html">Signup now</a>
+               Não é um membro? <a href="../register/register.html">Cadastre-se agora</a>
             </div>
          </form>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script
+         src="../../../utils/api.js"
+      ></script>
+      <script
+         src="./login.js"></script>
    </body>
 </html>
