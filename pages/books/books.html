@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Livros
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:400,600'>
+
+      <link rel="stylesheet" href="books.css">
+
+  
+</head>
+
+<body>
+  
+<main role="main">
+  <button class="popup-trigger btn" id="popup-trigger"><span>Cadastrar Livro<i class="fa fa-plus-square-o"></i></span></button>
+  <button class="popup-triggers btn" id="popup-triggers"><span>Deletar<i class="fa fa-plus-square-o"></i></span></button>
+  <button class="popup-triggers btn" id="popup-triggers"><span>Deletar<i class="fa fa-plus-square-o"></i></span></button>
+</main>
+<div class="overlay" id="overlay">
+  <div class="overlay-background" id="overlay-background"></div>
+  <div class="overlay-content" id="overlay-content">
+    <div class="fa fa-times fa-lg overlay-close" id="overlay-close"></div>
+    <h1 class="main-heading">Cadastre seu Livro!</h1>
+    <form class="signup-form" method="post" action="#" novalidate="novalidate">
+      <label for="signup-name">Titulo do Livro</label>
+      <input id="signup-name" type="text" name="name" autocomplete="off"/>
+      <label for="signup-email">Edição<//label>
+      <select id="signup-email" type="email" name="email" autocomplete="off"/>
+      <option>Breno
+      <option>Breno Baco do Exu
+      <option>Breno emo 2010
+      <option>Breno pura maconha 2020
+      </select>
+      <button class="btn btn-outline submit-btn"><span>Cadastrar</span></button>
+    </form>
+  </div>
+</div>
+
+<div class="over" id="over">
+    <div class="over-background" id="over-background"></div>
+    <div class="over-content" id="over-content">
+      <div class="fa fa-times fa-lg over-close" id="over-close"></div>
+      <h1 class="main-heading">Deletar</h1>
+      <form class="signup-form" method="post" action="#" novalidate="novalidate">
+        <label for="signup-name">Livro</label>
+        <input id="signup-name" type="text" name="name" autocomplete="off"/>
+        <button class="btn btn-outline submit-btn"><span>Deletar</span></button>
+      </form>
+    </div>
+  </div>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="books.js"></script>
+
+</body>
+</html>
