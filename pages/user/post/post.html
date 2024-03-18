@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post.css">
+    <title>Post</title>
+</head>
+<body>
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Nova mensagem</h3>
+          <h4>insira os dados abaixo</h4>
+          <fieldset id = "usuario">
+            <input placeholder="Usuario" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset id="titulo">
+            <input placeholder="Titulo" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset id="mensagem">
+            <textarea placeholder="digite sua mensagem" tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+       
+        
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script
+     src="../../../utils/api.js"
+  ></script>
+</body>
+</html>
